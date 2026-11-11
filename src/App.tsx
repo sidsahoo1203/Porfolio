@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { MotionConfig, useReducedMotion } from 'framer-motion'
 import { Loader, Nav } from './components/Nav'
 import { About } from './sections/About'
@@ -34,6 +35,7 @@ export default function App() {
           <Achievements />
           <Contact />
         </main>
+        <Analytics />
       </div>
     </MotionConfig>
   )
