@@ -10,6 +10,7 @@ import { Hero } from './sections/Hero'
 import { Projects } from './sections/Projects'
 import { Skills } from './sections/Skills'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App() {
   const reduce = !!useReducedMotion()
@@ -36,6 +37,7 @@ export default function App() {
           <Contact />
         </main>
         <Analytics />
+        <SpeedInsights/>
       </div>
     </MotionConfig>
   )
