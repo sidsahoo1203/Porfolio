@@ -9,6 +9,7 @@ import { Experience } from './sections/Experience'
 import { Hero } from './sections/Hero'
 import { Projects } from './sections/Projects'
 import { Skills } from './sections/Skills'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   const reduce = !!useReducedMotion()
@@ -34,6 +35,7 @@ export default function App() {
           <Achievements />
           <Contact />
         </main>
+        <Analytics />
       </div>
     </MotionConfig>
   )
